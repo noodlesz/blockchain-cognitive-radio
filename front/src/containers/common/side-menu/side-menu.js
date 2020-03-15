@@ -19,8 +19,6 @@ class SideMenu extends Component {
 
         {_.map(routes, (route, index) => {
 
-          console.log('route: ', route)
-
           if (!route.menu) return ""
           if (route.submenu)
             return (

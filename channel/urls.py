@@ -11,7 +11,7 @@ from .api import (
 
 router = routers.DefaultRouter()
 router.register(r'channel', ChannelViewSet, base_name='channel')
-router.register(r'channel_lease', ChannelLeaseViewSet, base_name='channel_lease')
-router.register(r'channel_allocation', ChannelAllocationViewSet, base_name='channel_allocation')
+router.register(r'lease', ChannelLeaseViewSet, base_name='lease')
+router.register(r'allocate', ChannelAllocationViewSet, base_name='allocate')
 
 urlpatterns = router.urls

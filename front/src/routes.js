@@ -2,6 +2,8 @@
 import Home from "./containers/home/Home"
 import Page from "./containers/page"
 
+import ChannelLease from "./containers/lease-channel/CreateLease.js"
+
 const routes = [
   {
     component: Home,
@@ -11,14 +13,15 @@ const routes = [
     submenu: false,
   },
   {
-    component: Page,
+    component: ChannelLease,
     exact: false,
     icon: "pencil alternate",
-    name: "Page",
-    path: "/page",
+    name: "Channel Lease",
+    path: "/lease/create",
     menu: true,
     submenu: false,
   }
+
 ]
 
 export const defaultPath = "/"

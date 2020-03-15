@@ -3,9 +3,7 @@ import RouteWithSubRoutes from '../../components/route-with-sub-routes'
 
 import "../../static/css/category.scss"
 
-import _ from 'lodash'
-
-class Category extends Component {
+class ChannelLease extends Component {
 
   render() {
     const { routes } = this.props
@@ -20,4 +18,4 @@ class Category extends Component {
   }
 }
 
-export default Category
+export default ChannelLease

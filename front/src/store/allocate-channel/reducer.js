@@ -1,0 +1,35 @@
+import {
+    LIST_AVAILABLE_CHANNELS,
+    ALLOCATE_CHANNEL
+} from './types'
+
+const state_default = {
+    count: 0,
+    first: 1,
+    has_next: null,
+    has_prev: null,
+    last: "last",
+    next: null,
+    num_pages: 0,
+    page_number: 1,
+    previous: null,
+    results: []
+}
+
+export default (state = state_default, action) => {
+    switch (action.type) {
+      case ALLOCATE_CHANNEL:
+        return {
+          ...state,
+          results: {
+            ...state.results, [action.payload.slug]: action.payload }
+        }
+      case LIST_AVAILABLE_CHANNELS:
+        return {
+          ...action.payload,
+          results: _.mapKeys(action.payload.results, 'id')
+        }
+      default:
+        return state;
+    }
+  }

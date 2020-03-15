@@ -37,10 +37,6 @@ class ChannelAllocationViewSet(viewsets.ModelViewSet):
     def get_serializer_class(self):
         return self.serializer_class
 
-    @action(detail=False, methods=['GET'], url_path='available_channels')
+    @action(detail=False, methods=['GET'], url_path='available-channels')
     def available_channels(self, request, *args, **kwargs):
         return views.Response('List of Available Channels')
-
-    @action(detail=False, methods=['POST'], url_path='allocate_band')
-    def allocate_band(self, request, *args, **kwargs):
-        return views.Response('Allocate Band')
