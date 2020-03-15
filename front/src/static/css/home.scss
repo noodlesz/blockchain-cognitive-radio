@@ -1,0 +1,110 @@
+@import 'variables.scss';
+
+.home {
+    width: 90% !important;
+    margin: 3% auto;
+    display: flex;
+    flex-direction: column;
+
+    p {
+        margin: 0;
+    }
+
+    .main-title {
+        text-align: center;
+        font-size: 2.3em;
+    }
+    .description-text {
+        text-align: center;
+        font-size: 1.5em;
+        margin-top: 1% !important;
+        color: $description-color;
+    }
+
+    .products-list {
+        $border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 4%;
+
+        .header {
+            padding: 5%;
+            border-top-left-radius: $border-radius;
+            border-top-right-radius: $border-radius;
+            width: 100% !important;
+
+            img {
+                width: 100% !important;
+            }
+
+            &.product-iris {
+                background-color: $product-iris-color !important;
+            }
+            &.product-cyberes {
+                background-color: $product-cyberes-color !important;
+            }
+            &.product-saori {
+                background-color: $product-saori-color !important;
+            }
+        }
+
+        .product {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            border-radius: $border-radius;
+            box-shadow: 5px 5px 5px #00000026;
+
+            @media screen and (min-width: 840px) {
+                width: 28% !important;
+            }
+            @media screen and (max-width: 840px) {
+                width: 45% !important;
+                margin: 2% auto !important;
+            }
+            @media screen and (max-width: 720px) {
+                width: 55% !important;
+                margin: 2% auto !important;
+                justify-self: center;
+            }
+            @media screen and (max-width: 480px) {
+                width: 90% !important;
+                margin: 2% auto;
+            }
+
+            .subtitle {
+                text-align: center;
+                margin: 4% 0 !important;
+                color: $text-color;
+            }
+
+            .description-product {
+                width: 90%;
+                margin: auto;
+                text-align: justify;
+            }
+
+            .footer {
+                padding: 6% 3% !important;
+                display: flex;
+                align-items: center;
+                margin-top: auto;
+
+                .link {
+                    color: $color-spotlight;
+                    cursor: pointer;
+                    text-decoration: none !important;
+                    margin-left: auto;
+                    display: flex;
+                    font-size: 1.2em;
+                }
+
+                button {
+                    display: flex;
+                    border-radius: 24px;
+                    margin-left: auto !important;
+                }
+            }
+        }
+    }
+}

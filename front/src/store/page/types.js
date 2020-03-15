@@ -1,0 +1,7 @@
+export const CREATE_PAGE        = 'CREATE_PAGE'
+export const DUPLICATE_PAGE     = 'DUPLICATE_PAGE'
+export const UPDATE_PAGE        = 'UPDATE_PAGE'
+export const FETCH_PAGE         = 'FETCH_PAGE'
+export const FETCH_PAGES        = 'FETCH_PAGES'
+export const FETCH_PAGE_HISTORY = 'FETCH_PAGE_HISTORY'
+export const FETCH_PAGE_BREADCRUMB = 'FETCH_PAGE_BREADCRUMB'

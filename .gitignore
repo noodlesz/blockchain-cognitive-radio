@@ -1,0 +1,23 @@
+ 
+### Django ###
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+server_settings.py
+db.sqlite3
+media
+.vscode/
+docs
+etc/
+
+# fabric #
+env.json
+fabfile.py
+
+# tox
+tox.ini
+
+#fabfile
+fabfile.py

@@ -1,0 +1,64 @@
+@import "./variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?otf3jj');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?otf3jj#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?otf3jj') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?otf3jj') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?otf3jj##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon-saori {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.saori-step_acesso {
+  &:before {
+    content: $saori-step_acesso; 
+  }
+}
+.saori-step_comprometido {
+  &:before {
+    content: $saori-step_comprometido; 
+  }
+}
+.saori-step_lateral {
+  &:before {
+    content: $saori-step_lateral; 
+  }
+}
+.saori-step_missao {
+  &:before {
+    content: $saori-step_missao; 
+  }
+}
+.saori-step_persistencia {
+  &:before {
+    content: $saori-step_persistencia; 
+  }
+}
+.saori-step_privilegios {
+  &:before {
+    content: $saori-step_privilegios; 
+  }
+}
+.saori-step_reconhecimento {
+  &:before {
+    content: $saori-step_reconhecimento; 
+  }
+}
+

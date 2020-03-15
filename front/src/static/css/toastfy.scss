@@ -1,0 +1,47 @@
+
+/* Styles Toast */
+.Toastify__toast-container{
+    min-width: 340px;
+    width: auto !important;
+}
+.Toastify__toast{
+    border-radius: 4px !important;
+    padding: 10px !important;
+}
+.Toastify__toast--success {
+    background: #2CB56D !important;
+}
+.Toastify__toast--error {
+    background: #CF4E53 !important;
+}
+.Toastify__toast--warning {
+    background: #F1C40F !important;
+}
+.Toastify__toast--info {
+    background: #059CE5 !important;
+}
+.Toastify__toast-body{
+    font-weight: 600 !important;
+}
+.Toastify__toast-body:before {
+    content: "";
+    font-family: Icons; 
+    margin-right: 10px;
+    vertical-align: middle;
+    font-size: 1.6rem;
+}
+.Toastify__toast--success .Toastify__toast-body:before {
+    content: "\f00c";
+}
+
+.Toastify__toast--error .Toastify__toast-body:before {
+    content: "\f075";
+}
+
+.Toastify__toast--warning .Toastify__toast-body:before {
+    content: "\f00d";
+}
+
+.Toastify__toast--info .Toastify__toast-body:before {
+    content: "\f05a";
+}

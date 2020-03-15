@@ -1,0 +1,29 @@
+{% load static from staticfiles %}
+{% load render_bundle from webpack_loader %}
+{% load webpack_static from webpack_loader %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}"></head>
+
+    <title>Blockchain</title>
+    <script type="text/javascript" src="{% url 'javascript-catalog' %}"></script>
+
+    {% render_bundle 'main' 'css' %}
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script src="{% url 'js_reverse' %}" type="text/javascript" charset="utf-8"></script>
+
+    <script type="text/javascript">
+      // window.user = {{ user_serializer|safe }}
+    </script>
+    {% render_bundle 'main' 'js' %}
+  </body>
+</html>
